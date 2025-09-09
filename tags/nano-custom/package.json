@@ -1,6 +1,6 @@
 {
   "name": "nano-custom",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "A lightweight and framework-agnostic NanoSights.dev component to track custom events.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

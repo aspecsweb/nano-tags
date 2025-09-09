@@ -1,6 +1,6 @@
 {
   "name": "nano-analytics",
-  "version": "0.10.0",
+  "version": "1.0.0",
   "description": "A lightweight and framework-agnostic analytics component to track user events and sessions in your web applications.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
