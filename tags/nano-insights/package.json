@@ -1,6 +1,6 @@
 {
   "name": "nano-insights",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A framework-agnostic performance monitoring component to fetch and display web page speed insights using tools like Google PageSpeed Insights.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

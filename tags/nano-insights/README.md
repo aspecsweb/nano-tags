@@ -15,7 +15,6 @@ npm install nano-insights
 
 <nano-insights
   projectKey="PROJECT_KEY"
-  userId="USER_ID
 />
 ```
 

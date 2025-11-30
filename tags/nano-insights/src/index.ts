@@ -8,7 +8,7 @@ import "./global.d";
 
 /**
  * NanoInsights measures performance metrics (Largest Contentful Paint, First Input Delay, Cumulative Layout Shift)
- * and sends them along with projectKey, userId, and sessionId to the insights endpoint.
+ * and sends them along with the projectKey and the sessionId to the insights endpoint.
  */
 
 // Add these interfaces to fix TypeScript errors
@@ -24,7 +24,6 @@ interface LayoutShiftEntry extends PerformanceEntry {
 @customElement("nano-insights")
 export class NanoInsights extends LitElement {
   @property({ type: String }) projectKey: string | null = "";
-  @property({ type: String }) userId: string | null = "";
 
   private sessionId: string;
 
@@ -227,7 +226,6 @@ export class NanoInsights extends LitElement {
       body: JSON.stringify({
         projectKey: this.projectKey,
         sessionId: this.sessionId,
-        userId: this.userId,
         userAgent: navigator.userAgent,
         referrer: document.referrer,
         url: window.location.href,
