@@ -7,7 +7,6 @@
 
 interface HTMLNanoAnalyticsElement extends HTMLElement {
   projectKey?: string;
-  userId?: string;
 }
 
 declare global {

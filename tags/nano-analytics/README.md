@@ -15,7 +15,6 @@ npm install nano-analytics
 
 <nano-analytics
   projectKey="PROJECT_KEY"
-  userId="USER_ID
 />
 ```
 

@@ -9,7 +9,6 @@ import "./global.d";
 @customElement("nano-analytics")
 export class NanoAnalytics extends LitElement {
   @property({ type: String }) projectKey: string | null = "";
-  @property({ type: String }) userId: string | null = "";
 
   private sessionId: string;
 
@@ -71,7 +70,6 @@ export class NanoAnalytics extends LitElement {
       body: JSON.stringify({
         projectKey: this.projectKey,
         sessionId: this.sessionId,
-        userId: this.userId,
         userAgent: navigator.userAgent,
         referrer: document.referrer,
         ...data,
