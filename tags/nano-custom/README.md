@@ -15,7 +15,6 @@ npm install nano-custm
 
 <nano-custom
   projectKey="PROJECT_KEY"
-  userId="USER_ID
 />
 ```
 

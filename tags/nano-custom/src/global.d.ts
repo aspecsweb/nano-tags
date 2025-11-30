@@ -9,7 +9,6 @@ import { track } from "./track";
 
 interface HTMLNanoCustomElement extends HTMLElement {
   projectKey?: string;
-  userId?: string;
 }
 
 declare global {

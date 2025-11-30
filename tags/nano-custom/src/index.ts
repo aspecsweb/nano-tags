@@ -12,7 +12,7 @@ export { track };
 /**
  * The nano-custom tag enables custom event tracking by exposing a global trackEvent method
  * and listening for custom events on the window. Events are sent to the NanoSights API
- * along with projectKey, userId, and sessionId for analytics purposes.
+ * along with the projectKey and the sessionId for analytics purposes.
  */
 
 // Assign `track` to window global for browser environments
@@ -27,7 +27,6 @@ if (typeof window !== "undefined") {
 @customElement("nano-custom")
 export class NanoCustom extends LitElement {
   @property({ type: String }) projectKey: string | null = "";
-  @property({ type: String }) userId: string | null = "";
 
   private sessionId: string;
 
@@ -95,7 +94,6 @@ export class NanoCustom extends LitElement {
       body: JSON.stringify({
         projectKey: this.projectKey,
         sessionId: this.sessionId,
-        userId: this.userId,
         userAgent: navigator.userAgent,
         referrer: document.referrer,
         url: window.location.href,
